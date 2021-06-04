@@ -1799,7 +1799,7 @@
     react-refresh "^0.9.0"
     url-loader "^3.0.0"
 
-"@nrwl/storybook@12.3.6":
+"@nrwl/storybook@12.3.6", "@nrwl/storybook@^12.3.6":
   version "12.3.6"
   resolved "https://registry.yarnpkg.com/@nrwl/storybook/-/storybook-12.3.6.tgz#9921abbefac2abb7aa1e77c6a4a37ef719d7d060"
   integrity sha512-xOA3Wv6xZvTBLGNNTjcbeZ1feMKW3eqPKjWsTkds54euNKD/0YUAneiLxML79jiOp9o9UOcrZn8JpEV2ctWUWA==
