@@ -25,9 +25,7 @@
       "targets": {
         "build": {
           "executor": "@nrwl/next:build",
-          "outputs": [
-            "{options.outputPath}"
-          ],
+          "outputs": ["{options.outputPath}"],
           "options": {
             "root": "apps/admin-buddy",
             "outputPath": "dist/apps/admin-buddy"
@@ -57,9 +55,7 @@
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/admin-buddy"
-          ],
+          "outputs": ["coverage/apps/admin-buddy"],
           "options": {
             "jestConfig": "apps/admin-buddy/jest.config.js",
             "passWithNoTests": true
@@ -68,9 +64,7 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/admin-buddy/**/*.{ts,tsx,js,jsx}"
-            ]
+            "lintFilePatterns": ["apps/admin-buddy/**/*.{ts,tsx,js,jsx}"]
           }
         },
         "storybook": {
@@ -90,9 +84,7 @@
         },
         "build-storybook": {
           "executor": "@nrwl/storybook:build",
-          "outputs": [
-            "{options.outputPath}"
-          ],
+          "outputs": ["{options.outputPath}"],
           "options": {
             "uiFramework": "@storybook/react",
             "outputPath": "dist/storybook/admin-buddy",
@@ -129,9 +121,7 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/admin-buddy-e2e/**/*.{js,ts}"
-            ]
+            "lintFilePatterns": ["apps/admin-buddy-e2e/**/*.{js,ts}"]
           }
         }
       }
@@ -160,9 +150,7 @@
         },
         "bundle-ios": {
           "executor": "@nrwl/react-native:bundle",
-          "outputs": [
-            "apps/buddy-app/build"
-          ],
+          "outputs": ["apps/buddy-app/build"],
           "options": {
             "entryFile": "apps/buddy-app/src/main.tsx",
             "platform": "ios",
@@ -192,9 +180,7 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/buddy-app/**/*.{js,ts,tsx}"
-            ]
+            "lintFilePatterns": ["apps/buddy-app/**/*.{js,ts,tsx}"]
           }
         },
         "sync-deps": {
@@ -203,12 +189,41 @@
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/buddy-app"
-          ],
+          "outputs": ["coverage/apps/buddy-app"],
           "options": {
             "jestConfig": "apps/buddy-app/jest.config.js",
             "passWithNoTests": true
+          }
+        },
+        "storybook": {
+          "executor": "@nrwl/storybook:storybook",
+          "options": {
+            "uiFramework": "@storybook/react",
+            "port": 4400,
+            "config": {
+              "configFolder": "apps/buddy-app/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
+        },
+        "build-storybook": {
+          "executor": "@nrwl/storybook:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "uiFramework": "@storybook/react",
+            "outputPath": "dist/storybook/buddy-app",
+            "config": {
+              "configFolder": "apps/buddy-app/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
           }
         }
       }

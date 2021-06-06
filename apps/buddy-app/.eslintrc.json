@@ -4,11 +4,15 @@
   "overrides": [
     {
       "files": ["*.tsx", "*.ts"],
-      "rules": { "@typescript-eslint/ban-ts-comment": "off" }
+      "rules": {
+        "@typescript-eslint/ban-ts-comment": "off"
+      }
     },
     {
       "files": ["*.js", "*.jsx"],
-      "rules": { "@typescript-eslint/no-var-requires": "off" }
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
     }
   ]
 }
