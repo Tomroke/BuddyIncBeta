@@ -52,6 +52,7 @@
     "@nrwl/linter": "12.3.6",
     "@nrwl/next": "^12.3.6",
     "@nrwl/react": "12.3.6",
+    "@nrwl/react-native": "^11.4.1",
     "@nrwl/storybook": "^12.3.6",
     "@nrwl/tao": "12.3.6",
     "@nrwl/web": "12.3.6",
