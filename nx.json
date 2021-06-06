@@ -1,9 +1,14 @@
 {
   "implicitDependencies": {
-    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
     ".eslintrc.json": "*"
   },
-  "affected": { "defaultBase": "master" },
+  "affected": {
+    "defaultBase": "master"
+  },
   "npmScope": "buddy-inc-beta",
   "tasksRunnerOptions": {
     "default": {
@@ -20,8 +25,15 @@
     }
   },
   "projects": {
-    "admin-buddy": { "tags": [] },
-    "admin-buddy-e2e": { "tags": [], "implicitDependencies": ["admin-buddy"] },
-    "buddy-app": { "tags": [] }
+    "admin-buddy": {
+      "tags": []
+    },
+    "admin-buddy-e2e": {
+      "tags": [],
+      "implicitDependencies": ["admin-buddy"]
+    },
+    "buddy-app": {
+      "tags": []
+    }
   }
 }
