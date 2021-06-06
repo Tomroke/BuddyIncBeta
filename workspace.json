@@ -25,7 +25,9 @@
       "targets": {
         "build": {
           "executor": "@nrwl/next:build",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "root": "apps/admin-buddy",
             "outputPath": "dist/apps/admin-buddy"
@@ -55,7 +57,9 @@
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/admin-buddy"],
+          "outputs": [
+            "coverage/apps/admin-buddy"
+          ],
           "options": {
             "jestConfig": "apps/admin-buddy/jest.config.js",
             "passWithNoTests": true
@@ -64,7 +68,9 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/admin-buddy/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": [
+              "apps/admin-buddy/**/*.{ts,tsx,js,jsx}"
+            ]
           }
         },
         "storybook": {
@@ -84,7 +90,9 @@
         },
         "build-storybook": {
           "executor": "@nrwl/storybook:build",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "uiFramework": "@storybook/react",
             "outputPath": "dist/storybook/admin-buddy",
@@ -121,7 +129,86 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/admin-buddy-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/admin-buddy-e2e/**/*.{js,ts}"
+            ]
+          }
+        }
+      }
+    },
+    "buddy-app": {
+      "root": "apps/buddy-app",
+      "sourceRoot": "apps/buddy-app/src",
+      "projectType": "application",
+      "generators": {},
+      "targets": {
+        "start": {
+          "executor": "@nrwl/react-native:start",
+          "options": {
+            "port": 8081
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "nx start buddy-app"
+          }
+        },
+        "run-ios": {
+          "executor": "@nrwl/react-native:run-ios",
+          "options": {}
+        },
+        "bundle-ios": {
+          "executor": "@nrwl/react-native:bundle",
+          "outputs": [
+            "apps/buddy-app/build"
+          ],
+          "options": {
+            "entryFile": "apps/buddy-app/src/main.tsx",
+            "platform": "ios",
+            "bundleOutput": "dist/apps/buddy-app/ios/main.bundle"
+          }
+        },
+        "run-android": {
+          "executor": "@nrwl/react-native:run-android",
+          "options": {}
+        },
+        "build-android": {
+          "executor": "@nrwl/react-native:build-android",
+          "outputs": [
+            "apps/buddy-app/android/app/build/outputs/bundle",
+            "apps/buddy-app/android/app/build/outputs/apk"
+          ],
+          "options": {}
+        },
+        "bundle-android": {
+          "executor": "@nrwl/react-native:bundle",
+          "options": {
+            "entryFile": "apps/buddy-app/src/main.tsx",
+            "platform": "android",
+            "bundleOutput": "dist/apps/buddy-app/android/main.bundle"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/buddy-app/**/*.{js,ts,tsx}"
+            ]
+          }
+        },
+        "sync-deps": {
+          "executor": "@nrwl/react-native:sync-deps",
+          "options": {}
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/buddy-app"
+          ],
+          "options": {
+            "jestConfig": "apps/buddy-app/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }
