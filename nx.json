@@ -1,15 +1,32 @@
 {
-  "npmScope": "buddy-inc-beta",
-  "affected": { "defaultBase": "master" },
   "implicitDependencies": {
-    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
     ".eslintrc.json": "*"
   },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "npmScope": "buddy-inc-beta",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "build-storybook"
+        ]
+      }
     }
   },
-  "projects": { "buddy-app": { "tags": [] } }
+  "projects": {
+    "buddy-app": {
+      "tags": []
+    }
+  }
 }
