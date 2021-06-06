@@ -34,6 +34,9 @@
     },
     "buddy-app": {
       "tags": []
+    },
+    "relay-cache": {
+      "tags": []
     }
   }
 }

@@ -227,6 +227,56 @@
           }
         }
       }
+    },
+    "relay-cache": {
+      "root": "apps/relay-cache",
+      "sourceRoot": "apps/relay-cache/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/node:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/relay-cache",
+            "main": "apps/relay-cache/src/main.ts",
+            "tsConfig": "apps/relay-cache/tsconfig.app.json",
+            "assets": ["apps/relay-cache/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/relay-cache/src/environments/environment.ts",
+                  "with": "apps/relay-cache/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "relay-cache:build"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/relay-cache/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/relay-cache"],
+          "options": {
+            "jestConfig": "apps/relay-cache/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }

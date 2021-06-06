@@ -2297,6 +2297,32 @@
     tsconfig-paths "^3.9.0"
     url-loader "^3.0.0"
 
+"@nrwl/node@^12.3.6":
+  version "12.3.6"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-12.3.6.tgz#8a40d536e877364e01639b787a64a4377cf72936"
+  integrity sha512-pwLgRKn7XaPvubI3KfBT9j4ZxEAm8nnd8Ll0UA8BJh5T/WkluPxkYdGDb6g+HMJ6WdAiWultj+gShR+bgKdmFw==
+  dependencies:
+    "@nrwl/devkit" "12.3.6"
+    "@nrwl/jest" "12.3.6"
+    "@nrwl/linter" "12.3.6"
+    "@nrwl/workspace" "12.3.6"
+    circular-dependency-plugin "5.2.0"
+    copy-webpack-plugin "6.0.3"
+    fork-ts-checker-webpack-plugin "^3.1.1"
+    fs-extra "^9.1.0"
+    glob "7.1.4"
+    license-webpack-plugin "2.1.2"
+    rxjs "^6.5.4"
+    rxjs-for-await "0.0.2"
+    source-map-support "0.5.16"
+    tree-kill "1.2.2"
+    ts-loader "5.4.5"
+    tsconfig-paths-webpack-plugin "3.2.0"
+    tslib "^2.0.0"
+    webpack "4.42.0"
+    webpack-merge "4.2.1"
+    webpack-node-externals "1.7.2"
+
 "@nrwl/react-native@^11.4.1":
   version "11.4.1"
   resolved "https://registry.yarnpkg.com/@nrwl/react-native/-/react-native-11.4.1.tgz#cb7150a21c49b39dcec23fc7e6df1948b8fdf651"
@@ -4530,6 +4556,13 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
+
+angular-testcafe@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/angular-testcafe/-/angular-testcafe-2.0.6.tgz#209cebe0b0f5cff557a2fa95dd434f2d7c9874d6"
+  integrity sha512-LQdNUBLtmnMSp9PS7SRq1vOvqTwylNggPLISQgxATZw+URFXYM1xQDhG3MI52GG4XVsyn1A+20uJXwqWoammXQ==
+  dependencies:
+    lodash "4.17.21"
 
 anser@1.4.9:
   version "1.4.9"
@@ -11517,7 +11550,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@4.x, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.7.0:
+lodash@4.17.21, lodash@4.x, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.7.0:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
