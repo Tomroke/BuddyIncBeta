@@ -37,6 +37,9 @@
     },
     "relay-cache": {
       "tags": []
+    },
+    "shared-components": {
+      "tags": []
     }
   }
 }
