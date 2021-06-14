@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Header } from '@buddy-inc-beta/shared-components';
+import { Header } from '../header/header';
 import './page.css';
 
 export interface PageProps {

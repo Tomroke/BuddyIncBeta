@@ -1,4 +1,8 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm test
+nx run admin-buddy:lint
+nx run relay-cache:lint
+nx run shared-components:lint
+nx run buddy-app:lint
+ 
