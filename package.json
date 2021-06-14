@@ -103,7 +103,9 @@
     "url-loader": "^3.0.0"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.format:write": "prettier --write"
+    "**/*.{js,jsx,ts,tsx}":[
+     "yarn eslint",
+     "yarn prettier --write"
+    ]
   }
 }
