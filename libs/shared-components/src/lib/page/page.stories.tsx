@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { Page, PageProps } from '@buddy-inc-beta/shared-components';
+import { Page, PageProps } from './page';
 import * as Shared from '../header/header.stories'
 export default {
   title: 'Example/Page',

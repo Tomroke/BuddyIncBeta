@@ -34,9 +34,14 @@ yarn nx admin-buddy:storybook
 ```
 ***
 ### **Running Buddy App**
+
+#### Begin by starting the JavaScript bundler.
+```
+npx nx start buddy-app
+```
 #### Run Buddy App on iOS
 ```
-Yarn nx run buddy-app:run-ios
+yarn nx run buddy-app:run-ios
 ```
 #### Alternativlt, run this command if pod install haven't been run yet.
 ```

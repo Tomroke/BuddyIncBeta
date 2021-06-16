@@ -14,6 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "noUnusedLocals": true,
     "paths": {
       "@buddy-inc-beta/shared-components": [
         "libs/shared-components/src/index.ts"
