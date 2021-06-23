@@ -329,6 +329,27 @@
           }
         }
       }
+    },
+    "react-native-comp": {
+      "root": "libs/react-native-comp",
+      "sourceRoot": "libs/react-native-comp/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/react-native-comp/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/react-native-comp"],
+          "options": {
+            "jestConfig": "libs/react-native-comp/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }

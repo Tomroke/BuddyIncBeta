@@ -32,6 +32,8 @@
     "@emotion/server": "11.0.0",
     "@emotion/styled": "11.1.5",
     "@nrwl/next": "12.3.6",
+    "@storybook/native": "^2.1.1",
+    "@storybook/native-components": "^2.1.1",
     "core-js": "^3.6.5",
     "document-register-element": "1.13.1",
     "next": "10.2.0",
