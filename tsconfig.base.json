@@ -18,6 +18,9 @@
     "paths": {
       "@buddy-inc-beta/shared-components": [
         "libs/shared-components/src/index.ts"
+      ],
+      "@buddy-inc-beta/react-native-comp": [
+        "libs/react-native-comp/src/index.ts"
       ]
     }
   },

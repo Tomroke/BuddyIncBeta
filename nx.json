@@ -40,6 +40,9 @@
     },
     "shared-components": {
       "tags": []
+    },
+    "react-native-comp": {
+      "tags": []
     }
   }
 }
